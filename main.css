@@ -1,0 +1,547 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Merienda', cursive;
+}
+header{
+    background:beige;
+    font-family: 'MuseoModerno', cursive;
+}
+.navbar{
+    min-height: 75px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-brand{
+    font-size: 1.9rem;
+    padding: 4px 20px;
+    color: black;
+}
+.nav-menu{
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    right: 39px;
+
+}
+.nav-item{
+    font-size: 1.3rem;
+    list-style: none;
+}
+.ha{
+    text-decoration: none;
+    color:black;
+}
+.ha:hover{
+    font-size:1.8rem;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color:black;
+}
+@media(max-width:800px){
+    .hamburger{
+        display: block;
+        margin: 0 9px;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: absolute;
+        left: -120%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color:transparent;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item{
+        margin: 15px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+}
+.container{
+    width: 100%;
+    justify-content: center;
+}
+
+
+
+
+/** First Container**/
+.Container1{
+    background: linear-gradient(rgba(0, 0, 0, 0.471),rgba(0, 0, 0, 0.471)),url(Images/back.jpg) center;
+    background-size: cover;
+    height: 670px;
+    display: grid;
+    justify-content: center;
+}
+.scl{
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 100px auto;
+}
+.scl_name{
+    color:white;
+}
+.scl_details{
+    font-size: 1.5rem;
+    text-align: center;
+    color:white;
+    margin: 12px auto;
+}
+
+
+
+/**Second Container**/
+.Container2{
+    background: gainsboro;
+    width: 98.7vw;
+}
+.head2{
+    font-size: 1.9rem;
+    padding-top: 40px;
+    text-align: center;
+}
+.boxcontainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box{
+    position: relative;
+    width: 260px;
+    height:340px;
+    padding: 40px;
+    background:white;
+    border-radius: 6px;
+    margin:55px auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 1px 4px 9px black;
+}
+.Icon1{
+    position: relative;
+    bottom: 28px;
+    width: 90px;
+    height:90px;
+    color:#fff;
+    background:url(Images/Smart.png) center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius:50%;
+    font-size: 30px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+.Icon2{
+    position: relative;
+    bottom: 28px;
+    width: 90px;
+    height:90px;
+    color:#fff;
+    background:url(Images/sports.png) center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius:50%;
+    font-size: 30px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+.Icon3{
+    position: relative;
+    bottom: 28px;
+    width: 90px;
+    height:90px;
+    color:#fff;
+    background:url(Images/labs.png) center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius:50%;
+    font-size: 30px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+.Icon4{
+    position: relative;
+    bottom: 28px;
+    width: 90px;
+    height:90px;
+    color:#fff;
+    background:url(Images/creativity.png) center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius:50%;
+    font-size: 30px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+.content{
+    font-size: 1.1rem;
+    margin: 10px;
+    position: relative;
+    z-index: 1;
+    transition: 0.8s;
+}
+.boxcontainer .box:nth-child(1) .Icon1{
+    box-shadow: 0 0 0 0 aquamarine;
+}
+.boxcontainer .box:nth-child(1):hover .Icon1{
+    box-shadow: 0 0 0 400px aquamarine;
+}
+.boxcontainer .box:nth-child(2) .Icon2{
+    box-shadow: 0 0 0 0 #ffae42;
+}
+.boxcontainer .box:nth-child(2):hover .Icon2{
+    box-shadow: 0 0 0 400px #ffae42;
+}
+.boxcontainer .box:nth-child(3) .Icon3{
+    box-shadow: 0 0 0 0 aqua;
+}
+.boxcontainer .box:nth-child(3):hover .Icon3{
+    box-shadow: 0 0 0 400px aquamarine;
+}
+.boxcontainer .box:nth-child(4) .Icon4{
+    box-shadow: 0 0 0 0 #ffae42;
+}
+.boxcontainer .box:nth-child(4):hover .Icon4{
+    box-shadow: 0 0 0 400px #ffae42;
+}
+
+
+/**Container 3**/
+.Container3{
+    width: 98.7vw;
+    background: gainsboro;
+    text-align: center;
+    align-items: center;
+}
+.abt{
+    font-size: 1.9rem;
+    padding-top: 20px;
+}
+.abt_us{
+    font-size: 1.2rem;
+    margin: 20px 14px 0;
+}
+.motto{
+    font-size: 1.3rem;
+    color:violet;
+}
+.btn{
+    width: 160px;
+    height: 50px;
+    font-size: 1.4rem;
+    border-radius: 29px;
+    margin:25px auto 0 ;
+    background: limegreen;
+}
+.btn:hover{
+    width:200px;
+    background-color:crimson;
+    padding-top: 9px;
+}
+.reg{
+    text-decoration: none;
+    color: black;
+    
+}
+
+/** Container 4 **/
+.Container4{
+    width: 98.7vw;
+    background: gainsboro;
+    overflow: hidden;
+}
+.content2{
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 30px;
+}
+.boxcontainer2{
+    display: flex;
+    margin:  50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Icon5{
+    position: relative;
+    right: 47px;
+    bottom: 40px;
+    width: 270px;
+    height:340px;
+    color:#fff;
+    background:url(Images/tamil.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+
+.Icon6{
+    position: relative;
+    right: 47px;
+    bottom: 40px;
+    width: 270px;
+    height:340px;
+    color:#fff;
+    background:url(Images/principle.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+
+.Icon7{
+    position: relative;
+    right: 47px;
+    bottom: 40px;
+    width: 270px;
+    height:340px;
+    color:#fff;
+    background:url(Images/maths.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+.Icon8{
+    position: relative;
+    right: 47px;
+    bottom: 40px;
+    width: 270px;
+    height:340px;
+    color:#fff;
+    background:url(Images/Chemistry.jpg) center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+.Icon9{
+    position: relative;
+    right: 47px;
+    bottom: 40px;
+    width: 270px;
+    height:340px;
+    color:#fff;
+    background:url(Images/Science.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+.Icon10{
+    position: relative;
+    right: 47px;
+    bottom: 40px;
+    width: 270px;
+    height:340px;
+    color:#fff;
+    background:url(Images/Pt.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+.Icon11{
+    position: relative;
+    right: 47px;
+    bottom: 40px;
+    width: 270px;
+    height:340px;
+    color:#fff;
+    background:url(Images/physics.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+
+.name{
+    font-size: 1.2rem;
+}
+.Qualification{
+    font-size: 0.9rem;
+}
+.work{
+    font-size: 1rem;
+}
+.breif{
+    font-size: 1.1rem;
+
+}
+.box:hover .Icon5{
+    left: 8px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    transition:1.4s;
+}
+.box:hover .Icon6{
+    left: 8px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    transition: 1.4s;
+}
+
+.box:hover .Icon7{
+    left: 8px;
+    width: 90px;
+    height: 85px;
+    border-radius: 50%;
+    transition: 1.4s;
+}
+.box:hover .Icon8{
+    left: 8px;
+    width: 90px;
+    height: 85px;
+    border-radius: 50%;
+    transition: 1.4s;
+}
+.box:hover .Icon9{
+    left: 8px;
+    width: 90px;
+    height: 85px;
+    border-radius: 50%;
+    transition: 1.4s;
+}
+.box:hover .Icon10{
+    left: 8px;
+    width: 90px;
+    height: 85px;
+    border-radius: 50%;
+    transition: 1.4s;
+}
+.box:hover .Icon11{
+    left: 8px;
+    width: 90px;
+    height: 85px;
+    border-radius: 50%;
+    transition: 1.4s;
+}
+
+/**Container 5**/
+.Container5{
+    width: 98.7vw;
+    background: gainsboro;
+    text-align: center;
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+
+}
+.images img{
+    width:32.5%;
+    margin: 20px;
+    box-shadow: 0 0 19px lightslategrey;
+    border-radius: 8px;
+}
+.images img:hover{
+    width: 35%;
+}
+.img_detail{
+    font-size: 1.4rem;
+    
+}
+
+@media(max-width:700px){
+    .images img{
+        width: 76%;
+    }
+    .images img:hover{
+        width: 90%;
+    }
+}
+
+/**Footer**/
+.footer{
+    width: 98.7vw;
+    background:gainsboro;
+    text-align: center;
+}
+.details{
+    display: flex;
+    gap:29px;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+.links{
+    color: violet;
+    font-size: 1.2rem;
+    margin: 20px 10px 0;
+}
+.cp{
+    padding-top: 10px;
+}
